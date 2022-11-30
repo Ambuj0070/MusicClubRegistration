@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <script>
+    function validation() {
+      var name =
+        document.forms.RegForm.Name.value;
+      var email =
+        document.forms.RegForm.EMail.value;
+      var phone =
+        document.forms.RegForm.Telephone.value;
+      var what =
+        document.forms.RegForm.Subject.value;
+      var password =
+        document.forms.RegForm.Password.value;
+      var address =
+        document.forms.RegForm.Address.value;
+      var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; //Javascript reGex for Email Validation.
+      var regPhone = /^\d{10}$/; // Javascript reGex for Phone Number validation.
+      var regName = /\d+$/g; // Javascript reGex for Name validation
+
+      if (name == "" || regName.test(name)) {
+        window.alert("Please enter your name properly.");
+        name.focus();
+        return false;
+      }
+
+      if (address == "") {
+        window.alert("Please enter your REGISTRATION NUMBER.");
+        address.focus();
+        return false;
+      }
+
+      if (email == "" || !regEmail.test(email)) {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+      }
+
+      if (RE == "") {
+        alert("Please enter your Experince");
+        password.focus();
+        return false;
+      }
+
+      if (RE.length < 6) {
+        alert("RelevantExperiences should be atleast 6 character long");
+        password.focus();
+        return false;
+
+      }
+      if (phone == "" || !regPhone.test(phone)) {
+        alert("Please enter valid phone number.");
+        phone.focus();
+        return false;
+      }
+
+      if (what.selectedIndex == -1) {
+        alert("Please enter your Role preference.");
+        what.focus();
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+
+
+
+</head>
+
+<body>
+  <section class="title">
+    <nav class="navbar navbar-expand-lg  " style="font-family: 'Montserrat', sans-serif;padding-top:30px;">
+      <div class="container-{30px} " style="padding-left:25px;">
+        <a class="navbar-brand" id="brand2" href="#">
+          <img id="i1" src="https://st2.depositphotos.com/3405719/5673/v/450/depositphotos_56731061-stock-illustration-drum-sketch.jpg" alt="Bootstrap" width="60" height="60">
+        </a>
+      </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" id="brand" href="#">EUPHORIA</a>
+        <button class="navbar-toggler" id="b1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText" ">
+            <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" id="c1" href="#Aboutcourse">About Club</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="c2" href="#curry">Upcoming Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="c3" href="#gol">Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="c3" href="#proj">Contact Us</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section>
+    <div class="container-fluid about" id="Aboutcourse">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 text-center">
+          <img src="https://media0.giphy.com/media/TKMZJBW5SQASORUvJb/giphy.gif?cid=790b761174e3c76b3e4e040b0d1d8622a0269d2831267b48&rid=giphy.gif&ct=ts" alt="" width="500px" height="500px">
+        </div>
+        <div class="col-lg-6 col-md-6 " id="about-head" style="font-size: 15px;">
+          <div id="about-text" style="padding-top: 130px; font-family: 'Montserrat', sans-serif; ">
+            <p class="para"></p>
+            <h1 class="head"><strong>ABOUT</strong></h1>
+            <p style=" font-family: 'Montserrat', sans-serif; "><strong>The Music Club aims to promote taste and talent amongst VIT BHOPAL students by organizing concerts, workshops and performances. It offers practice spaces and a wide array of
+                instruments which are safely stored; an opportunity for students to come together and discuss music; and a chance to perform and showcase their talents at events throughout the year.Meetings are held once a week for each instrumental
+                or vocal group. Singers and instrument players meet on different days of the week. Apart from these meetings, other meetings are scheduled based on the individual needs of students.</strong> </p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid about" id="curry" style="padding-top:150px;">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 text-center" style="font-family: 'Montserrat', sans-serif; font-size: 15px; margin:auto;">
+          <h1><strong>UPCOMING EVENTS</strong></h1>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 text-center i1" style="position:relative;padding-left:120px; padding-top:50px;font-family: 'Montserrat';">
+        <img src="https://images.unsplash.com/photo-1549834125-82d3c48159a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmFuZHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Calender" width="500px" height="300px" style="border-radius: 25px;">
+        <h3 style="font-size:25px;"><strong>STREETIN BEATS 2K22</strong></h3>
+
+
+      </div>
+      <div class="col-lg-6 col-md-12 i2 text-center" style=" padding-top:50px;font-family: 'Montserrat';">
+        <img src="https://i.ytimg.com/vi/lgE7hx8kXSY/maxresdefault.jpg" alt="Calender" width="500px" height="300px" style="border-radius: 25px;">
+        <h3 style="font-size:25px;"><strong>SA RE GA MA 2K22</strong></h3>
+
+
+      </div>
+      <div class="col-lg-6 col-md-12 i3 text-center" style="padding-left:120px; padding-top:50px;font-family: 'Montserrat';">
+        <img src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/06/29/Pictures/_17c61364-3dee-11e6-974a-2ab7ab59b8ea.jpg" alt="Calender" width="500px" height="300px" style="border-radius: 25px;">
+        <h3 style="font-size:25px;"><strong>FESTIN O' BEATS 2K23</strong></h3>
+
+      </div>
+      <div class="col-lg-6 col-md-12 i4 text-center" style="padding-top:50px;font-family: 'Montserrat';">
+        <img src="https://dubeat.com/wp-content/uploads/20151125__1122perks-2.jpg" alt="Calender" width="500px" height="300px" style="border-radius: 25px;">
+        <h3 style="font-size:25px;"><strong>MASTERCLASS 2K23</strong></h3>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid about" id="gol" style="padding-top:150px;">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 text-center" style="font-family: 'Montserrat', sans-serif; font-size: 15px; margin:auto;">
+          <h1><strong>CLUB REGISTRATION</strong></h1>
+        </div>
+        <div style="text-align:center;">
+
+
+          <form name="RegForm" onsubmit="return validation()" method="post">
+
+            <p>Full Name: <br /><input type="text" size="65" name="Name" /></p>
+
+            <br />
+
+            <p>Registration Number: <br /><input type="text" size="65" name="Address" />
+            </p>
+
+            <br />
+
+            <p>E-mail Address: <br /><input type="text" size="65" name="EMail" /></p>
+
+            <br />
+
+            <p>Relevant experience:<br /><input type="text" size="65" name="Password" /></p>
+
+            <br />
+
+            <p>Mobile Number:<br /> <input type="text" size="65" name="Telephone" /></p>
+
+            <br />
+
+
+            <p>
+              ROLE:<br />
+              <select type="text" value="" name="Subject">
+                <option>LEAD GUITAR</option>
+                <option>BASS</option>
+                <option>DRUMS</option>
+                <option>PIANO</option>
+                <option>EVENT MANAGER</option>
+              </select>
+            </p>
+
+            <br />
+            <br />
+
+            <p>Why do you think you deserve this role?</p><br />
+            <p><textarea cols="55" name="Comment"> </textarea></p>
+
+
+            <p>
+              <button type="submit" class="btn btn-dark" value="SUBMIT" name="Submit">Submit</button>
+              <button type="reset" class="btn btn-outline-dark" value="RESET" name="Reset">Reset</button>
+            </p>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="Projects" style="padding-top:100px;">
+
+      <div class="row" id="proj" style="margin:auto;">
+        <div class="col-lg-6 col-md-6 text-center" style="font-family: 'Montserrat', sans-serif; font-size: 15px; margin:auto;">
+          <h1><strong>CONTACT US</strong></h1>
+        </div>
+
+
+
+      </div>
+      <div class="row">
+
+
+
+        <div class="col-lg-6 text-center" style="font-family: 'Montserrat', sans-serif; padding:30px;">
+          <p class="bt" style="color:#000;">For queries:</p>
+          <p class="bt" style="color:#000;">euphoriavitb@vitbhopal.ac.in</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img id="i1" src="https://st2.depositphotos.com/3405719/5673/v/450/depositphotos_56731061-stock-illustration-drum-sketch.jpg" alt="Bootstrap" width="100" height="100">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
